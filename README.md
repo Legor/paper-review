@@ -1,4 +1,5 @@
 # Paper Review
+Deep Learnging & Data Mining paper review
 
 
 ## Topic
@@ -6,6 +7,7 @@
 * **[Relation Extraction](#relation-extraction)**
 * **[Sentence Classification](#sentence-classification)**
 * **[Metric Learning](#metric-learning)**
+* **[Bio Text Mining](#bio-text-mining)**
 
 
 ## Relation Extraction
@@ -25,3 +27,8 @@
 
 ## Metric Learning
 * **FaceNet: A Unified Embedding for Face Recognition and Clustering** (CVPR 2015), Florian Schrof et al. [review] [[paper]](https://arxiv.org/abs/1503.03832) [[github]](https://github.com/davidsandberg/facenet)
+
+
+## Bio Text Mining
+* **Tree pattern expression for extracting information from syntactically parsed text corpora** (The Journal of Data Mining and Knowledge Discovery 2011), YS Choi [review] [[paper]](https://link.springer.com/article/10.1007/s10618-010-0184-8)
+* **BELMiner: adapting a rule-based relation extraction system to extract biological expression language statements from bio-medical literature evidence sentences.** (The Journal of Biological Databases and Curation 2017) Ravikumar KE et al. [review] [[paper]](https://www.ncbi.nlm.nih.gov/pubmed/28365720)

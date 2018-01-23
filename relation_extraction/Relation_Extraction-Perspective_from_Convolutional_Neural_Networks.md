@@ -1,7 +1,7 @@
 # Relation Extraction: Perspective from Convolutional Neural Networks [[pdf]](http://www.cs.nyu.edu/~thien/pubs/vector15.pdf)
 * Author
-	* Thien Huu Nguyen(New York University)
-	* Ralph Grishman(New York University)
+	* Thien Huu Nguyen (New York University)
+	* Ralph Grishman (New York University)
 * Title of Conference(Journal)
 	* NAACL 2015
 
@@ -15,7 +15,7 @@
 <br>➤ pre-trained 된 워드 임베딩 모델을 사용하고 있다.
 
 
-## Introduction
+## 1. Introduction
 * Relation Extaction task can be divided into two steps:
 	1. Detecting
 	2. Classifying
@@ -37,8 +37,12 @@
 <br>➤ CNN을 통한 RC에 대해서는 최근 Liu와 Zeng의 연구가 발표된 바 있지만, RE는 아직 발표된 게 없다.
 
 
-## Convolutional Neural Network for Relation Extraction
-* 
+## 2. Related Work
+* ...
+
+
+## 3. Convolutional Neural Network for Relation Extraction
+* ...
 
 
 

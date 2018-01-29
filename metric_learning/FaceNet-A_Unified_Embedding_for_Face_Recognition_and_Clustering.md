@@ -56,12 +56,61 @@
 
 
 ## 3. Method
-* 
+![architecture_triplet](https://user-images.githubusercontent.com/15166794/35470350-3d688b74-038b-11e8-992b-2ed6db6f6a5b.png)
+
+* We employ the triplet loss that directly reflects what we want to achieve in face verification, recognition and clustering.
+<br>➤ 우리는 triplet loss를 이용하여 face verification, recognition and clustering에서 성취하길 원한다.
+* we strive for an embedding f(x), from an image x into a feature space <img src="https://latex.codecogs.com/svg.latex?R^d"/>, such that the squared distance between all faces, independent of imaging conditions, of the same identity is small, whereas the squared distance between a pair of face images from different identities is large.
+<br>➤ f(x)라는 임베딩 함수를 얻고자 한다. 어떤 이미지 x로 부터 feature space <img src="https://latex.codecogs.com/svg.latex?R^d"/>를 얻는 것이다. 같은 identity pair의 경우에는 feature space에서의 distance가 작고 다른 identity pair의 경우에는 distance가 커지게 임베딩한다.
+
 
 ### 3.1. Triplet Loss
+* Here we want to ensure that an image <img src="https://latex.codecogs.com/svg.latex?x_i^a"/> (anchor) of a specific person is closer to all other images <img src="https://latex.codecogs.com/svg.latex?x_i^p"/> (positive) of the same person than it is to any image <img src="https://latex.codecogs.com/svg.latex?x_i^n"/> (negative) of any other person. This is visualized in Figure 3.
+<br>➤ 특정 인물을 anchor로 두고 이와 같은 사람들인 positive를 다른 사람인 negative보다 거리가 가깝도록 한다. 시각적으로 나타내면 Figure 3와 같다.
 
+<center><img src="https://latex.codecogs.com/svg.latex?||f(x_i^a)-f(x_i^p)||_2^2+\alpha<||f(x_i^a)-f(x_i^n)||_2^2"/></center>
 
+* where α is a margin that is enforced between positive and negative pairs
+<br>➤ α는 positive과 negative 간의 margin을 의미한다. 즉, anchor에 대해 negative는 positive보다 최소 α 이상 떨어져 있도록 하는 것이다.
+* The loss that is being minimized is then
+	<center><img src="https://latex.codecogs.com/svg.latex?L=\sum_i^N{[||f(x_i^a)-f(x_i^p)||_2^2-||f(x_i^a)-f(x_i^n)||_2^2+\alpha]_+}"/></center>
+	* <img src="https://latex.codecogs.com/svg.latex?[x]_+=max(0,x)"/>
+	* <img src="https://latex.codecogs.com/svg.latex?||f(x)||_2=1"/>
+	* <img src="https://latex.codecogs.com/svg.latex?\alpha=0.2"/>
+
+	
 ### 3.2. Triplet Selection
+* Given <img src="https://latex.codecogs.com/svg.latex?x_i^a"?>, we want to select an <img src="https://latex.codecogs.com/svg.latex?x_i^p"/> (hard positive) such that <img src="https://latex.codecogs.com/svg.latex?argmax_{x_i^p}{||f(x_i^a)-f(x_i^p)||_2^2}"/> and similarly <img src="https://latex.codecogs.com/svg.latex?x_i^n"/> (hard negative) such that <img src="https://latex.codecogs.com/svg.latex?argmin_{x_i^n}{||f(x_i^a)-f(x_i^n)||_2^2}"/>.
+<br>➤ anchor가 주어졌을 때 hard positive(positive 중에 가장 먼 것)랑 hard negative(negative 중에 가장 가까운 것)를 구하길 원한다.
+* But, it is infeasible to compute the argmin and argmax across the whole training set.
+<br>➤ 하지만 모든 학습 데이터에 대해서 argmin, argmax를 하는 것은 현실적으로 불가능하다.
+* we use large mini-batches in the order of a few thousand exemplars and only compute the argmin and argmax within a mini-batch.
+<br>➤ 그래서 mini-batch를 사용해서 하나의 batch에 해당하는 약 수천 개의 샘플에 대해서만 argmin, argmax를 계산하도록 하였다.
+* Instead of picking the hardest positive, we use all anchor-positive pairs in a mini-batch while still selecting the hard negatives.
+<br>➤ hardest positive를 고르는 대신 positive 전체를 다 사용해서 학습하였고, 반면 negative의 경우는 그대로 hard negative를 고르도록 하였다.
+* but we found in practice that the all anchor-positive method was more stable and converged slightly faster at the beginning of training.
+<br>➤ 꼭 hard-positive을 안쓰고 모든 positive를 썼을 때 더 안정적이고 초반에 더 빠르게 수렴하는 것을 경험적으로 알 수 있었다.
+
+* Selecting the hardest negatives can in practice lead to bad local minima early on in training, specifically it can result in a collapsed model (i.e. f(x) = 0). 
+<br>➤ hardest negative를 선택하는 것은 local minima의 위험이 있다.
+* In order to mitigate this, it helps to select <img src="https://latex.codecogs.com/svg.latex?x_i^n"/> such that 
+<br>➤ 이를 완화시키기위해, 아래의 식으로 negative를 구한다.
+
+<center><img src="https://latex.codecogs.com/svg.latex?||f(x_i^a)-f(x_i^p)||_2^2+\alpha<||f(x_i^a)-f(x_i^n)||_2^2"/></center>
+
+* We call these negative exemplars semi-hard, as they are further away from the anchor than the positive exemplar, but still hard because the squared distance is close to the anchor-positive distance.
+<br>➤ 이렇게 구한 negative 샘플을 semi-hard라고 한다. positive보다 먼 negative를 구하는 것인데 이 경우 선택된 negative가 positive랑 가깝기 때문에 hard로 볼 수 있다.
+
 
 
 ### 3.3. Deep Convolutional Networks
+
+![convnet](https://user-images.githubusercontent.com/15166794/35526429-b1cba772-056a-11e8-95c8-837904c3e981.png)
+
+
+
+
+
+
+
+

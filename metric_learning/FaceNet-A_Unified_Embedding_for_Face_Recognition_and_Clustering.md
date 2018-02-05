@@ -52,7 +52,7 @@
 
 
 ## 2. Related Work
-* ...
+* skip...
 
 
 ## 3. Method
@@ -68,19 +68,23 @@
 * Here we want to ensure that an image <img src="https://latex.codecogs.com/svg.latex?x_i^a"/> (anchor) of a specific person is closer to all other images <img src="https://latex.codecogs.com/svg.latex?x_i^p"/> (positive) of the same person than it is to any image <img src="https://latex.codecogs.com/svg.latex?x_i^n"/> (negative) of any other person. This is visualized in Figure 3.
 <br>➤ 특정 인물을 anchor로 두고 이와 같은 사람들인 positive를 다른 사람인 negative보다 거리가 가깝도록 한다. 시각적으로 나타내면 Figure 3와 같다.
 
-<center><img src="https://latex.codecogs.com/svg.latex?||f(x_i^a)-f(x_i^p)||_2^2+\alpha<||f(x_i^a)-f(x_i^n)||_2^2"/></center>
-
+	<img src="https://latex.codecogs.com/svg.latex?||f(x_i^a)-f(x_i^p)||_2^2+\alpha<||f(x_i^a)-f(x_i^n)||_2^2"/>
+	
 * where α is a margin that is enforced between positive and negative pairs
 <br>➤ α는 positive과 negative 간의 margin을 의미한다. 즉, anchor에 대해 negative는 positive보다 최소 α 이상 떨어져 있도록 하는 것이다.
 * The loss that is being minimized is then
-	<center><img src="https://latex.codecogs.com/svg.latex?L=\sum_i^N{[||f(x_i^a)-f(x_i^p)||_2^2-||f(x_i^a)-f(x_i^n)||_2^2+\alpha]_+}"/></center>
+
+	<img src="https://latex.codecogs.com/svg.latex?L=\sum_i^N{[||f(x_i^a)-f(x_i^p)||_2^2-||f(x_i^a)-f(x_i^n)||_2^2+\alpha]_+}"/>
+	
 	* <img src="https://latex.codecogs.com/svg.latex?[x]_+=max(0,x)"/>
+	
 	* <img src="https://latex.codecogs.com/svg.latex?||f(x)||_2=1"/>
+	
 	* <img src="https://latex.codecogs.com/svg.latex?\alpha=0.2"/>
 
 	
 ### 3.2. Triplet Selection
-* Given <img src="https://latex.codecogs.com/svg.latex?x_i^a"?>, we want to select an <img src="https://latex.codecogs.com/svg.latex?x_i^p"/> (hard positive) such that <img src="https://latex.codecogs.com/svg.latex?argmax_{x_i^p}{||f(x_i^a)-f(x_i^p)||_2^2}"/> and similarly <img src="https://latex.codecogs.com/svg.latex?x_i^n"/> (hard negative) such that <img src="https://latex.codecogs.com/svg.latex?argmin_{x_i^n}{||f(x_i^a)-f(x_i^n)||_2^2}"/>.
+* Given <img src="https://latex.codecogs.com/svg.latex?x_i^a"/>, we want to select an <img src="https://latex.codecogs.com/svg.latex?x_i^p"/> (hard positive) such that <img src="https://latex.codecogs.com/svg.latex?argmax_{x_i^p}{||f(x_i^a)-f(x_i^p)||_2^2}"/> and similarly <img src="https://latex.codecogs.com/svg.latex?x_i^n"/> (hard negative) such that <img src="https://latex.codecogs.com/svg.latex?argmin_{x_i^n}{||f(x_i^a)-f(x_i^n)||_2^2}"/>.
 <br>➤ anchor가 주어졌을 때 hard positive(positive 중에 가장 먼 것)랑 hard negative(negative 중에 가장 가까운 것)를 구하길 원한다.
 * But, it is infeasible to compute the argmin and argmax across the whole training set.
 <br>➤ 하지만 모든 학습 데이터에 대해서 argmin, argmax를 하는 것은 현실적으로 불가능하다.
@@ -96,7 +100,7 @@
 * In order to mitigate this, it helps to select <img src="https://latex.codecogs.com/svg.latex?x_i^n"/> such that 
 <br>➤ 이를 완화시키기위해, 아래의 식으로 negative를 구한다.
 
-<center><img src="https://latex.codecogs.com/svg.latex?||f(x_i^a)-f(x_i^p)||_2^2+\alpha<||f(x_i^a)-f(x_i^n)||_2^2"/></center>
+	<img src="https://latex.codecogs.com/svg.latex?||f(x_i^a)-f(x_i^p)||_2^2<||f(x_i^a)-f(x_i^n)||_2^2"/>
 
 * We call these negative exemplars semi-hard, as they are further away from the anchor than the positive exemplar, but still hard because the squared distance is close to the anchor-positive distance.
 <br>➤ 이렇게 구한 negative 샘플을 semi-hard라고 한다. positive보다 먼 negative를 구하는 것인데 이 경우 선택된 negative가 positive랑 가깝기 때문에 hard로 볼 수 있다.

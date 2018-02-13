@@ -16,7 +16,7 @@ Deep Learnging & Data Mining paper review
 
 ### CNN
 * **Convolution Neural Network for Relation Extraction** (ADMA 2013), CY Liu et al. **[[review]](/relation_extraction/Relation_Neural_Network_for_Relation_Extraction.md)** [[paper]](https://link.springer.com/chapter/10.1007/978-3-642-53917-6_21)
-* **Relation Classification via Convolutional Deep Neural Network** (COLING 2014), D Zeng et al. [[paper]](http://www.aclweb.org/anthology/C14-1220)
+* **Relation Classification via Convolutional Deep Neural Network** (COLING 2014), D Zeng et al. **[[review]](/relation_extraction/Relation_Classification_via_Convolutional_Deep_Neural_Network.md)** [[paper]](http://www.aclweb.org/anthology/C14-1220)
 * **Relation Extraction: Perspective from Convolutional Neural Networks** (NAACL 2015), TH Nguyen et al. **[[review]](/relation_extraction/Relation_Extraction-Perspective_from_Convolutional_Neural_Networks.md)** [[paper]](http://www.cs.nyu.edu/~thien/pubs/vector15.pdf)
 * **Distant Supervision for Relation Extraction via Piecewise Convolutional Neural Networks** (EMNLP 2015), D Zeng et al. [[paper]](http://www.emnlp2015.org/proceedings/EMNLP/pdf/EMNLP203.pdf)
 * **Relation Extraction with Multi-instance Multi-label Convolutional Neural Networks** (COLING 2016), X Jiang et al. [[paper]](https://pdfs.semanticscholar.org/8731/369a707046f3f8dd463d1fd107de31d40a24.pdf)

@@ -33,6 +33,9 @@
 
 
 ## 3. Methodology
+
+![network](https://user-images.githubusercontent.com/15166794/36367647-f98a3236-1596-11e8-973c-f27d3c89c073.png)
+
 ### 3-1. The Neural Network Architecture
 * neural network architecture를 사용
 * Word Representation, Feature Extraction, Output, 3가지 component로 구성됨

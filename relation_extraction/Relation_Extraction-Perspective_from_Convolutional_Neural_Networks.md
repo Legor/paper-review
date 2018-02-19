@@ -42,6 +42,9 @@
 
 
 ## 3. Convolutional Neural Network for Relation Extraction
+
+![network](https://user-images.githubusercontent.com/15166794/36367668-1a3dbc00-1597-11e8-8a8c-74b6607567f6.png)
+
 * There are main 4 layers
 	1. the lookup tables to encode words in sentences by real-valued vectors
 	2. the convolutional layer to recognize n-gram

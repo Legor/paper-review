@@ -29,13 +29,13 @@ Deep Learnging & Data Mining paper review
 * **Neural Relation Extraction with Selective Attention over Instances** (ACL 2016), Y Lin et al. [[paper]](http://www.aclweb.org/anthology/P16-1200)
 
 ### Etc.
+* **Distant supervision for relation extraction without labeled data** (ACL 2009), M Mintz et al. **[[review]](/relation_extraction/Distant_supervision_for_relation_extraction_without_labeled_data.md)** [[paper]](https://web.stanford.edu/~jurafsky/mintz.pdf)
 * **End-to-End Neural Relation Extraction with Global Optimization** (EMNLP 2017), M Zhang et al. [[paper]](https://pdfs.semanticscholar.org/0359/cde335fadcfe6f3407722c1a8cc620d0fe8c.pdf)
 * **Adversarial Training for Relation Extraction** (EMNLP 2017), Y Wu et al. [[paper]](https://people.eecs.berkeley.edu/~russell/papers/emnlp17-relation.pdf)
 * **Joint Extraction of Entities and Relations Using Reinforcement Learning and Deep Learning** (Journal of Computational Intelligence and Neuroscience 2017), Y Feng et al. [[paper]](https://www.hindawi.com/journals/cin/2017/7643065/)
 * **A simple neural network module for relational reasoning** (arXiv 2017), A Santoro et al. [[paper]](https://arxiv.org/abs/1706.01427)
 * **Reasoning With Neural Tensor Networks for Knowledge Base Completion** (NIPS 2013), Richard Socher et al. [[paper]](https://papers.nips.cc/paper/5028-reasoning-with-neural-tensor-networks-for-knowledge-base-completion.pdf)
 * **Recent Trends in Deep Learning Based Natural Language Processing** (arXiv 2017), T Young et al. [[paper]](https://arxiv.org/abs/1708.02709)
-* **Distant supervision for relation extraction without labeled data** (ACL 2009), M Mintz et al. [[paper]](https://web.stanford.edu/~jurafsky/mintz.pdf)
 * **A Review of Relation Extraction** (Literature review for Language and Statistics II 2 2007), N Bach et al. [[paper]](http://www.cs.cmu.edu/~nbach/papers/A-survey-on-Relation-Extraction.pdf)
 * **A Systematic Exploration of the Feature Space for Relation Extraction** (NAACL 2007), J Jiang et al. [[paper]](http://sifaka.cs.uiuc.edu/czhai/pub/hlt07-rel.pdf)
 * **Jointly Extracting Relations with Class Ties via Effective Deep Ranking** (arXiv 2016), H Ye et al. [[paper]](https://arxiv.org/abs/1612.07602)

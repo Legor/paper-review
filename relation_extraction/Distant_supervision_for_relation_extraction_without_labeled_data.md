@@ -52,19 +52,19 @@
 	* regression classifier가 (10개 중) 각 문장에 등장한 entity pair의 relation을 예측할 때, 10개 문장 전체의 feature들을 모두 사용함
 * Example 1
 	* Freebase에 있는 *location-contains* relation을 생각해보자
-	* 또한, 이 관계를 갖는 *<Virginia, Richmond>*와 *<France, Nantes>* pair instance를 생각해보자
-	* *'Richmond, the capital of Virginia'* 혹은 *'Henry's Edict of Nantes helped the Protestants of France'*와 같은 문장이 있을 때, 이 문장으로부터 feature를 추출해야 함
+	* 또한, 이 관계를 갖는 *<Virginia, Richmond>* 와 *<France, Nantes>* pair instance를 생각해보자
+	* *'Richmond, the capital of Virginia'* 혹은 *'Henry's Edict of Nantes helped the Protestants of France'* 와 같은 문장이 있을 때, 이 문장으로부터 feature를 추출해야 함
 	* Richmond sentence(첫 번째 문장)처럼 매우 유용한 문장이 있는가하면 Nantes sentence(두 번째)처럼 그닥 쓸모 없는 문장도 있음
-	* testing할 때, *'Vienna, the capital of Austria'*라는 문장을 우연히 만났다면, 이 문장의 하나 혹은 그 이상의 feature는 Richmond sentence의 feature와 매칭될 것임
-	* 그리고 *<Austria, Vienna>*가 *location-contrains* relation에 속한다는 근거를 제공할 것임
+	* testing할 때, *'Vienna, the capital of Austria'* 라는 문장을 우연히 만났다면, 이 문장의 하나 혹은 그 이상의 feature는 Richmond sentence의 feature와 매칭될 것임
+	* 그리고 *<Austria, Vienna>* 가 *location-contrains* relation에 속한다는 근거를 제공할 것임
 * 우리의 architecture의 가장 큰 장점 중 하나는 같은 relation을 갖는 서로 다른 많은 문장으로부터 얻은 정보를 조합할 수 있다는 것임
 * Example 2
-	* *<Steven Spielberg, Saving Private Ryan>*이라는 entity pair가 있다고 하자
+	* *<Steven Spielberg, Saving Private Ryan>* 이라는 entity pair가 있다고 하자
 	* 아래의 두 문장은 *film-director* relation에 대한 문장임
 		* [Steven Splielberg]'s film [Saving Private Ryan] is loosely based on the brothers' story.
 		* Allison co-produced the Academy Award-winning [Saving Private Ryan], directed by [Steven Spielberg] ...
 	* 첫 번째 문장은 *film-director* relation에 대한 feature로 사용할 수 있지만, *film-writer* 또는 *film-producer* relation에 대한 feature로도 사용할 수 있음
-	* 두 번째 문장도 CEO relation(consider 'Robert Mueller directed the FBI')이라고도 볼 수 있음
+	* 두 번째 문장도 *CEO* relation(consider 'Robert Mueller directed the FBI')이라고도 볼 수 있음
 * 이처럼 많은 문장들의 정보를 조합하면 새로운 의미를 이끌어낼 수도 있다는 것임
 
 

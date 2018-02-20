@@ -85,7 +85,6 @@
 * Evaluation Metrics
 * Mintz et al. (2009) 에서 사용한 held-out evaluation과 manual evaluation을 사용함
 * 실험에 대한 precision/recall curve 등을 봄
-
 * 나머지는 skip...
 
 

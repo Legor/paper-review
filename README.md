@@ -20,7 +20,7 @@ Deep Learnging & Data Mining paper review
 * **Relation Extraction: Perspective from Convolutional Neural Networks** (NAACL 2015), TH Nguyen et al. **[[review]](/relation_extraction/Relation_Extraction-Perspective_from_Convolutional_Neural_Networks.md)** [[paper]](http://www.cs.nyu.edu/~thien/pubs/vector15.pdf)
 * **Distant Supervision for Relation Extraction via Piecewise Convolutional Neural Networks** (EMNLP 2015), D Zeng et al. **[[review]](/relation_extraction/Distant_Supervision_for_Relation_Extraction_via_Piecewise_Convolutional_Neural_Networks.md)** [[paper]](http://www.emnlp2015.org/proceedings/EMNLP/pdf/EMNLP203.pdf)
 * **Relation Extraction with Multi-instance Multi-label Convolutional Neural Networks** (COLING 2016), X Jiang et al. **[[review]](/relation_extraction/Relation_Extraction_with_Multi-instance_Multi-label_Convolutional_Neural_Networks.md)** [[paper]](https://pdfs.semanticscholar.org/8731/369a707046f3f8dd463d1fd107de31d40a24.pdf)
-* **Incorporating Relation Paths in Neural Relation Extraction** (arXiv 2016), W Zeng et al. [[paper]](https://arxiv.org/abs/1609.07479)
+* **Incorporating Relation Paths in Neural Relation Extraction** (EMNLP 2017), W Zeng et al. **[[review]](/relation_extraction/Incorporating_Relation_Paths_in_Neural_Relation_Extraction.md)** [[paper]](http://aclweb.org/anthology/D17-1186)
 * **MIT at SemEval-2017 Task 10: Relation Extraction with Convolutional Neural Networks** (SemEval 2017), JY Lee et al. [[paper]](https://aclanthology.info/pdf/S/S17/S17-2171.pdf)
 
 ### RNN

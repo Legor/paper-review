@@ -1,12 +1,12 @@
 # Paper Review
-Deep Learnging & Data Mining paper review
+Deep Learnging & Text Mining paper review
 
 
 ## Topic
 
 * **[Relation Extraction](#relation-extraction)**
 * **[Sentence Classification](#sentence-classification)**
-* **[Word Embedding](#word-embedding)**
+* **[Embedding](#embedding)**
 * **[Bio Text Mining](#bio-text-mining)**
 
 
@@ -47,20 +47,16 @@ Deep Learnging & Data Mining paper review
 * **Convolutional Neural Networks for Sentence Classification** (EMNLP 2014), Yoon Kim [[paper]](http://www.aclweb.org/anthology/D14-1181) [[github]](https://github.com/yoonkim/CNN_sentence) [[github2]](https://github.com/dennybritz/cnn-text-classification-tf)
 
 
-## Word Embedding
-### Model
-* **FaceNet: A Unified Embedding for Face Recognition and Clustering** (CVPR 2015), Florian Schroff et al. **[[review]](/metric_learning/FaceNet-A_Unified_Embedding_for_Face_Recognition_and_Clustering.md)** [[paper]](https://arxiv.org/abs/1503.03832) [[github]](https://github.com/davidsandberg/facenet)
+## Embedding
+* **Character-Aware Neural Language Models** (AAAI 2016), Yoon Kim et al. [[paper]](https://arxiv.org/pdf/1508.06615.pdf)
+* **FaceNet: A Unified Embedding for Face Recognition and Clustering** (CVPR 2015), Florian Schroff et al. **[[review]](/embedding/FaceNet-A_Unified_Embedding_for_Face_Recognition_and_Clustering.md)** [[paper]](https://arxiv.org/abs/1503.03832) [[github]](https://github.com/davidsandberg/facenet)
 * **Metric Learning for Text Documents** (IEEE Journal), G Lebanon et al. [[paper]](http://ieeexplore.ieee.org/document/1597108)
 * **Learning Semantic Similarity for Very Short Texts** (ICDMW 2015), C De Boom et al. [[paper]](https://arxiv.org/abs/1512.00765)
-
-### Word Embeddings
 * **Awesome Embedding Models** [[github]](https://github.com/Hironsan/awesome-embedding-models)
 * **Distributed Representations of Words and Phrases and their Compositionality** (NIPS 2013), T Mikolov et al. [[paper]](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 * **Efficient Estimation of Word Representations in Vector Space** (ICLR 2013), T Mikolov et al. [[paper]](https://arxiv.org/pdf/1301.3781.pdf)
 * **GloVe: Global Vectors for Word Representation** (EMNLP 2014), J Pennington et al. [[paper]](https://nlp.stanford.edu/pubs/glove.pdf)
 * **Dependency-Based Word Embeddings** (ACL 2014), O Levy et al. [[paper]](http://www.aclweb.org/anthology/P14-2050)
-
-### Evaluation
 * **Evaluation methods for unsupervised word embeddings** (EMNLP 2015), T Schnabel et al. [[paper]](http://www.aclweb.org/anthology/D15-1036)
 * **How to evaluate word embeddings? On importance of data efficiency and simple supervised tasks** (arXiv 2017), S Jastrzebski et al. [[paper]](https://arxiv.org/pdf/1702.02170.pdf)	[[github]](https://github.com/kudkudak/word-embeddings-benchmarks)
 * **Problems With Evaluation of Word Embeddings Using Word Similarity Tasks** (arXiv 2016), M Faruqui et al. [[paper]](https://aclweb.org/anthology/W/W16/W16-2506.pdf)

@@ -5,7 +5,7 @@ Deep Learnging & Text Mining paper review
 ## Topic
 
 * **[Relation Extraction](#relation-extraction)**
-* **[Sentence Classification](#sentence-classification)**
+* **[Text Classification](#text-classification)**
 * **[Embedding](#embedding)**
 * **[Bio Text Mining](#bio-text-mining)**
 
@@ -43,7 +43,7 @@ Deep Learnging & Text Mining paper review
 
 
 
-## Sentence Classification
+## Text Classification
 * **Convolutional Neural Networks for Sentence Classification** (EMNLP 2014), Yoon Kim [[paper]](http://www.aclweb.org/anthology/D14-1181) [[github]](https://github.com/yoonkim/CNN_sentence) [[github2]](https://github.com/dennybritz/cnn-text-classification-tf)
 
 

@@ -48,7 +48,7 @@ Deep Learnging & Text Mining paper review
 
 
 ## Embedding
-* **Character-Aware Neural Language Models** (AAAI 2016), Yoon Kim et al. [[paper]](https://arxiv.org/pdf/1508.06615.pdf)
+* **Character-Aware Neural Language Models** (AAAI 2016), Yoon Kim et al. **[[review]](/embedding/Character-Aware_Neural_Language_Models.md)** [[paper]](https://arxiv.org/pdf/1508.06615.pdf)
 * **FaceNet: A Unified Embedding for Face Recognition and Clustering** (CVPR 2015), Florian Schroff et al. **[[review]](/embedding/FaceNet-A_Unified_Embedding_for_Face_Recognition_and_Clustering.md)** [[paper]](https://arxiv.org/abs/1503.03832) [[github]](https://github.com/davidsandberg/facenet)
 * **Metric Learning for Text Documents** (IEEE Journal), G Lebanon et al. [[paper]](http://ieeexplore.ieee.org/document/1597108)
 * **Learning Semantic Similarity for Very Short Texts** (ICDMW 2015), C De Boom et al. [[paper]](https://arxiv.org/abs/1512.00765)

@@ -45,6 +45,7 @@ Deep Learnging & Text Mining paper review
 
 ## Text Classification
 * **Convolutional Neural Networks for Sentence Classification** (EMNLP 2014), Yoon Kim [[paper]](http://www.aclweb.org/anthology/D14-1181) [[github]](https://github.com/yoonkim/CNN_sentence) [[github2]](https://github.com/dennybritz/cnn-text-classification-tf)
+* **Recurrent Convolutional Neural Networks for Text Classification** (AAAI 2015), S Lai et al. **[[review]](/text_classification/Recurrent_Convolutional_Neural_Networks_for_Text_Classification.md)** [[paper]](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9745)
 
 
 ## Embedding

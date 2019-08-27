@@ -1,5 +1,10 @@
-# Towards Universal Dialogue State Tracking
+# Towards Universal Dialogue State Tracking [[pdf]](https://arxiv.org/abs/1810.09587)
 
+- Author
+  - Liliang Ren, Kaige Xie, Lu Chen and Kai Yu
+  - Shanghai Jiao Tong University
+- Title of Conference(Journal)
+  - EMNLP 2018 Oral
 
 ## Abstract
 
@@ -50,7 +55,7 @@
 
 ## 2. StateNet: A Universal Dialogue State Tracker
 
-![image-20190826145042327](/Users/Joohong/Library/Application Support/typora-user-images/image-20190826145042327.png)
+![figure1](figure1.png)
 
 * 각 대화 턴마다 StateNet은 다음을 input으로 받음
   * Multiple n-gram **user utterance** representation $r_u^n$
@@ -71,7 +76,7 @@
 
 ### 2.2 Multi-scale Receptors Layer
 
-![image-20190826154120028](/Users/Joohong/Library/Application Support/typora-user-images/image-20190826154120028.png)
+![figure2](figure2.png)
 
 * k-gram (1<=k<=n)의 representation 형태가 k개를 concat을 하는 방식이기에 k에 따라 representation 모양이 다름. 따라서 벡터 차원을 맞춰주기 위해 linear layer를 $c$ 개 붙임
 * $\hat{r}_u^k = \text{concat}_{j=1}^c (W_k^j r_u^k + b_k^j)$
@@ -94,6 +99,8 @@
 * Slot의 representation $s$ 를 구함. 여러 단어(구)의 경우 각 단어 벡터의 합으로 표현
 * 위의 user와 machine feature와의 연산을 위해 $2N_c$ 짜리 linear 태움
 * $f_s = \text{ReLU}(\text{Linear}(s))$
+
+
 * 
 * 지금까지 구한 user, machine, slot feature를 모두 합해서 turn-level feature vector $i_s$ 를 만들 것임
 * $i_s = f_s \otimes (f_u \oplus f_a)$
@@ -131,11 +138,11 @@
   * StateNet_PS: slot 별 파라미터 공유. 하나의 모델로 동일한 대화 정보에 대해 3개의 slot에 대해 예측을 진행. StateNet에 비해 1/3의 파라미터 크기
   * StateNet_PSI: 파라미터 공유와 함께 pre-trained model로 initialization함. 여기서 pre-training이란, 각 single slot에 대해서만 모델을 학습시키는 과정을 말함. single slot에 대한 모델 중 validation 성능이 제일 좋았던 모델의 weight로 multi slot 모델을 initialization하는 거임. (논문에 food에 대한 예시가 나오는데 설명이 이상함)
 
-![image-20190826180653611](/Users/Joohong/Library/Application Support/typora-user-images/image-20190826180653611.png)
+![table1](table1.png)
 
 * SOTA 찍음. Lexical feature 쓴 모델들보다도 좋음
 
-![image-20190826180727128](/Users/Joohong/Library/Application Support/typora-user-images/image-20190826180727128.png)
+![table2](table2.png)
 
 * Pre-training은 food에 대해서 하는 게 가장 성능이 좋았음
 * 그 이유는 food slot이 가장 어려운 문제에 해당하는데 이에 대해서 초기 학습을 한 것이 전체 성능을 높이는데 기여했을 것이라고 추측. Weakness slot에 대한 boosting의 개념으로 생각해볼 수 있다는 것

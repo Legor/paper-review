@@ -1,4 +1,10 @@
-# The Design and Implementation of XiaoIce, an Empathetic Social Chatbot
+# The Design and Implementation of XiaoIce, an Empathetic Social Chatbot [[pdf]](https://arxiv.org/abs/1812.08989)
+
+- Author
+  - Li Zhou, Jianfeng Gao, Di Li, and Heung-Yeung Shum
+  - MS & MS Research
+- Title of Conference(Journal)
+  - arXiv 2018
 
 ## Abstract
 
@@ -81,7 +87,7 @@
 
 ##3. System Architecture
 
-![image-20190819161239567](/Users/joohong/Library/Application Support/typora-user-images/image-20190819161239567.png)
+![figure1](figure1.png)
 
 * **User Experience Layer**
   * WeChat 같은 플랫폼과 연결되는 부분이며, 2가지 모드가 존재함
@@ -189,7 +195,7 @@
 
 ### 4.3 Core Chat
 
-![image-20190821145131973](/Users/joohong/Library/Application Support/typora-user-images/image-20190821145131973.png)
+![figure6](figure6.png)
 
 * Core Chat은 XiaoIce에서 매우 중요한 컴포넌트임. Empathetic Computing과 마찬가지로 텍스트 인풋을 받아서 interpersonal한 답변을 아웃풋으로 생성함
 
@@ -248,7 +254,7 @@
     * 데이터 필터링 파이프라인 역시 $(R, \bold{e}_R)$ 에 대해서 paired 데이터와 유사하게 적용함 (paired는 query에 대한 정보도 튜플에 포함됨)
     * Paired 데이터처럼 Unpaired 데이터도 Lucene을 사용해서 인덱싱을 함. 하지만 Paired와 달리 런타임에 $Q_C$ 에 대해서 토픽을 추가하는 등의 query 확장을 진행함
 
-    ![image-20190822101251067](/Users/joohong/Library/Application Support/typora-user-images/image-20190822101251067.png)
+    ![figure8](figure8.png)
 
     * 이 query 확장을 위해 Knowledge Graph (KG)를 사용함. KG는 MS의 Satori라는 것을 사용하며, head-relation-tail의 triplet (h, r, t) 으로 이루어져 있음
     * 위의 Figure 8은 XiaoIce KG와 unpaired 데이터셋을 이용해서 후보 답변을 생성하는 과정을 나타내고 있음. 이 과정을 3단계로 설명하면 다음과 같음
@@ -295,7 +301,7 @@
 
   * Deep Engagement Skill이란 유저의 특정 감정이나 지적 니즈를 만족시키기 위해 특정 토픽이나 세팅에 타겟하는 것. 이를 통해 유저와 장지적 관계를 맺어나감
 
-    ![image-20190822111454488](/Users/joohong/Library/Application Support/typora-user-images/image-20190822111454488.png)
+    ![figure17](figure17.png)
 
   * 이 카테고리에 포함된 스킬들은 크게 2가지 차원에 대해서 그룹핑을 할 수 있음: (IQ-EQ)와 (1대1-Group). Figure 17 참고
 
@@ -311,7 +317,7 @@
 
 ## 5. XiaoIce in the Wild
 
-![image-20190822112600199](/Users/joohong/Library/Application Support/typora-user-images/image-20190822112600199.png)
+![figure19](figure19.png)
 
 * **Core Chat (Conversation Engine)**
   * 5세대부터 neural generator가 도입됨. 이는 XiaoIce의 답변 커버리지와 다양성을 크게 향상시킴.

@@ -2,6 +2,11 @@
 Deep Learnging & Natural Language Processing Paper Review
 
 
+## Dialogue System
+* **The Design and Implementation of XiaoIce, an Empathetic Social Chatbot** (arXiv 2018), Zhou et al. **[[review]](dialogue_system/The_Design_and_Implementation_of_XiaoIce,_an_Empathetic_Social_Chatbot/review.md)** [[paper]](https://arxiv.org/abs/1812.08989)
+* **Towards Universal Dialogue State Tracking** (EMNLP 2018), Ren et al. **[[review]](dialogue_system/Towards_Universal_Dialogue_State_Tracking/review.md)** [[paper]](https://arxiv.org/abs/1810.09587)
+
+
 ## Relation Extraction
 * **Incorporating Relation Paths in Neural Relation Extraction** (EMNLP 2017), Zeng et al. **[[review]](/relation_extraction/Incorporating_Relation_Paths_in_Neural_Relation_Extraction/review.md)** [[paper]](http://aclweb.org/anthology/D17-1186)
 * **Relation Extraction with Multi-instance Multi-label Convolutional Neural Networks** (COLING 2016), Jiang et al. **[[review]](/relation_extraction/Relation_Extraction_with_Multi-instance_Multi-label_Convolutional_Neural_Networks/review.md)** [[paper]](https://pdfs.semanticscholar.org/8731/369a707046f3f8dd463d1fd107de31d40a24.pdf)

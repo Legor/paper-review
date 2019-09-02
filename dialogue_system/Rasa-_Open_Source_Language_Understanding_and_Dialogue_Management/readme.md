@@ -7,7 +7,9 @@
   - arXiv 2017
   - NIPS 2017 Conversational AI Workshop
 
-
+* My Comments
+  * 역시 Task-oriented System
+  * 논문이라기보단 System Description 느낌
 
 ## Abstract
 
@@ -29,7 +31,6 @@
 
 * Rasa는 몇몇 소스로부터 영감을 받음: Scikit-learn, Keras
 * fastText, CloVe 들을 사용
-* 
 
 
 
@@ -61,11 +62,62 @@
 * 액션이 실행될 때, slot, 이전 발화들, 이전 액션들과 같은 대화 히스토리로부터 관련 정보를 사용함
 * 액션은 실행할 이벤트를 만들어내고 tracker에게 이를 줌. 이벤트로는 "SlotSet", "AllSlotsReset", "Restarted" 등이 있음 
 
+### 3.3 Natural Language Understanding
+
+* Rasa NLU 모듈에 대한 것
+* 커스터마이징과 쉬운 사용, 두 마리 토끼를 잡기 위해 대부분의 use case에서 잘 작동하는 pre-defined 파이프라인을 제공
+* 예를 들어, "spacy_sklearn" 파이프라인은 다음의 과정을 통해 텍스트를 처리함
+  * spaCy를 이용해서 텍스트 토크나이징과 POS 처리
+  * GloVe 써서 각 토큰 임베딩 룩업하고 최종 representation을 만듬
+  * 그리고 sklearn을 통해서 svm 학습
+* 그리고 "ner_crf" 컴포넌트도 토크나이징 + POS
+
+### 3.4 Policies
+
+* tracker가 준 정보를 기반으로 다음에 실행할 액션을 선택하는 역할
+* 여기에는 featurizer라는 게 있는데, 이게 현재 대화 상태에 대한 vector representation을 만들어줌
+* featurizer는 다음을 표현하는 feature를 concat함
+  * 직전 액션이 무엇이었나
+  * 가장 최근 유저 메세지의 인텐트와 엔티티
+  * 어떤 슬롯이 현재 정의되어 있는가 (value를 찾은 슬롯을 의미하는 듯)
+
 
 
 ## 4. Usage
 
+### 4.1 Training Data Formats
 
+* Rasa NLU: json, md 포맷 지원
+
+  ![figure_nlu](figure_nlu.png)
+
+  * NLU는 하나의 문장, 인텐트, 엔티티(list)로 구성된 샘플로 학습
+
+* Rasa Core (DM): md 포맷 지원
+
+  ![figure_dm](figure_dm.png)
+
+  * 위와 같은 dialogue 형태
+  * 제일 윗줄은 대화의 hash code
+  * 바디 부분은 sequence of 이벤트
+    * 여기서 이벤트라 하면 inform{"location": "rome"...} 같은 거
+    * inform은 dialogue act라 보면 됨
+  * 시스템의 액션 또한 이벤트이며, 위에서 dash(-)가 붙은 라인이 이에 해당됨
+
+### 4.2 Machine Teaching
+
+* Rasa Core는 supervised learning과 함께 machine teaching이라는 걸 지원
+
+* machine teaching이란 개발자가 시스템이 만든 액션을 고치는 거임
+
+* 이건 학습 데이터 생성과 그럴듯한 대화의 공간을 탐색하기 위한 practical한 어프로치
+
+  ![figure_teach](figure_teach.png)
+
+* 위와 같은 프롬프트를 유저가 보고 처리함
+* 봇의 액션, 유저의 발화 및 인텐트를 보고 봇이 선택한 액션이 적절한지 평가하는 것임
+* 위의 보기 중 2번을 유저가 선택했다면, 다른 액션들이 봇의 예측 확률과 함께 주어지고 이중 뭐가 적절한지 골라야 함
+* 위와 같이 데이터를 생성하고 이를 학습한다는 거 같음
 
 
 

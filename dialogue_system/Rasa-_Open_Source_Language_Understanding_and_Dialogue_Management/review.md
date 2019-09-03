@@ -7,9 +7,21 @@
   - arXiv 2017
   - NIPS 2017 Conversational AI Workshop
 
-* My Comments
+* Key Points and My Comments
   * 역시 Task-oriented System
   * 논문이라기보단 System Description 느낌
+  * Rasa NLU는 크게 NER과 Intent, 이 결과로 structured data를 얻음 (no vector representation)
+  * Dialogue Handling(DM)을 옛날처럼 state machine 기반으로 하는 건 더이상 ㄴㄴ. 넘나 복잡함
+    * 강화학습(RL)을 하기엔 데이터도 많이 필요하고 policy 정의가 힘듬. 비전문가도 쉽고 편하게 쓰기 위해선 더욱 심플한 구조가 필요
+  
+  ![figure_flow](figure_flow.png)
+  
+* Reference
+
+  * https://www.youtube.com/watch?v=zpdLFR3sWZ4
+  * https://medium.com/@BhashkarKunal/conversational-ai-chatbot-using-rasa-nlu-rasa-core-how-dialogue-handling-with-rasa-core-can-use-331e7024f733
+  * https://github.com/RasaHQ/rasa-workshop-pydata-berlin
+  * https://www.slideshare.net/JustinaPetraityt/deprecating-the-state-machine-building-conversational-ai-with-the-rasa-stack
 
 ## Abstract
 

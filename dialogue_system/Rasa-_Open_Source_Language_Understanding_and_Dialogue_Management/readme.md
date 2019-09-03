@@ -123,13 +123,18 @@
 
 ## 5. Demonstration
 
-
+* Rasa Core의 유용함을 보이기 위해, bAbI 데이터셋을 사용
+* 간단한 slot filling 문제
+* 같은 정보(slot value)를 얻어내기 위한 방법은 여러가지가 있기 때문에 non-linearity를 내제한 문제라고 볼 수 있음
+* 그래서 accuracy나 precision는 dialogue policy를 평가하기에 적절한 metric이 아닐 수 있음
+* 실험을 해보면 이미 slot value를 얻은 것에 대해서는 시스템이 해당 정보를 얻기 위한 질문(액션)을 하지 않음 (확률이 낮게 책정됨)
 
 
 
 ## 6. Outlook
 
-
+* Rasa NLU and Core 짱짱
+* 많은 contribution 바람
 
 
 

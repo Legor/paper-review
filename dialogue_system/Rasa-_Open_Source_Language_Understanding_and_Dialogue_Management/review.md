@@ -15,6 +15,8 @@
 
 * 대화 시스템을 만들기 위한 오픈소스 python library인 Rasa NLU와 Rasa Core를 소개함
 * 소프트웨어 개발자 없이도 누구나 쉽게 머신러닝 기반 dialogue manager와 language understanding 모듈을 만들 수 있도록 디자인함
+* 생각보다 기술적으로 엄청난 것 같지는 않음. 각 모듈의 수준도 그리 높지 않고 정교하다고 느껴지지도 않음.
+* **딱 목적(비전문가도 쉽게 만들 수 있게 하자)에 알맞게 디자인된 Task-oriented 챗봇 프레임워크인 것으로 보임**
 * 코드는 깃헙 참고 https://github.com/RasaHQ/
 
 

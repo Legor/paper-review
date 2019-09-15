@@ -5,6 +5,7 @@ Deep Learnging & Natural Language Processing Paper Review
 ## Dialogue System
 * **The Design and Implementation of XiaoIce, an Empathetic Social Chatbot** (arXiv 2018), Zhou et al. **[[review]](dialogue_system/The_Design_and_Implementation_of_XiaoIce,_an_Empathetic_Social_Chatbot/review.md)** [[paper]](https://arxiv.org/abs/1812.08989)
 * **Towards Universal Dialogue State Tracking** (EMNLP 2018), Ren et al. **[[review]](dialogue_system/Towards_Universal_Dialogue_State_Tracking/review.md)** [[paper]](https://arxiv.org/abs/1810.09587)
+* **Gunrock: Building A Human-Like Social Bot By Leveraging Large Scale Real User Data** (Alexa Prize 2018), Chen et al. **[[review]](dialogue_system/Gunrock-_Building_A_Human-Like_Social_Bot_By_Leveraging_Large_Scale_User_Data/review.md)** [[paper]](https://pdfs.semanticscholar.org/b402/b85ad45e3ac51f1da8ee718373082ce24f47.pdf)
 * **Rasa: Open Source Language Understanding and Dialogue Management** (NIPS 2017 Conv AI Workshop), Bocklisch et al. **[[review]](dialogue_system/Rasa-_Open_Source_Language_Understanding_and_Dialogue_Management/review.md)** [[paper]](https://arxiv.org/abs/1712.05181)
 
 ## Relation Extraction

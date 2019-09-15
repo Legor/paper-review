@@ -1,4 +1,4 @@
-# Gunrock: Building A Human-Like Social Bot By Leveraging Large Scale Real User Data
+# Gunrock: Building A Human-Like Social Bot By Leveraging Large Scale Real User Data [[pdf]](https://pdfs.semanticscholar.org/b402/b85ad45e3ac51f1da8ee718373082ce24f47.pdf)
 
 - Author
   - Chun-Yen Chen , Dian Yu , Weiming Wen , Yi Mang Yang, Jiaping Zhang, Mingyang Zhou, Kevin Jesse, Austin Chau, Antara Bhowmick, Shreenath Iyer, Giritheja Sreenivasulu, Runxiang Cheng, Ashwin Bhandare, Zhou Yu

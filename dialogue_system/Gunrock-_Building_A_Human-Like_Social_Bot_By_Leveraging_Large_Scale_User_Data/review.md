@@ -172,7 +172,7 @@
 * Table 2는 토픽 대화 모듈(topic dialog module)에 따른 턴 수와 평균 점수를 보여줌
 * 대회기간동안 MOVIE가 가장 널리 다뤄졌고, ANIMAL이 가장 점수가 좋았음
 
-#### 5.1.2 Lexical analyssis
+#### 5.1.2 Lexical analysis
 
 * 사람들이 얘기하고 싶어하는 엔티티(주제)에 대해서 unsupervised로 분석해봄
 

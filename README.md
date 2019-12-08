@@ -23,6 +23,10 @@ Deep Learnging & Natural Language Processing Paper Review
 * **Aspect-based Sentiment Classification with Aspect-specific Graph Convolutional Networks** (EMNLP 2019), Zhang et al. **[[review]](sentiment_analysis/Aspect-based_Sentiment_Classification_with_Aspect-specific_Graph_Convolutional_Networks/review.md)** [[paper]](https://www.aclweb.org/anthology/D19-1464/)
 * **Attentional Encoder Network for Targeted Sentiment Classification** (arXiv 2019), Song et al. **[[review]](sentiment_analysis/Attentional_Encoder_Network_for_Targeted_Sentiment_Classification/review.md)** [[paper]](https://arxiv.org/abs/1902.09314)
 
+## Empathy
+
+* **MoEL: Mixture of Empathetic Listeners** (EMNLP 2019), Lin et al. **[[reivew]](empathy/MoEL-_Mixture_of_Empathetic_Listeners/review.md)** [[paper]](https://www.aclweb.org/anthology/D19-1012/)
+
 ## Text Classification
 
 * **Recurrent Convolutional Neural Networks for Text Classification** (AAAI 2015), Lai et al. **[[review]](text_classification/Recurrent_Convolutional_Neural_Networks_for_Text_Classification/review.md)** [[paper]](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9745)
